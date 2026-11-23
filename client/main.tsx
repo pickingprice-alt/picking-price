@@ -33,3 +33,4 @@ const script2 = document.createElement('script');
 script2.src = 'https://files.bpcontent.cloud/2026/11/23/13/20261123133015-C6I6ABV7.js';
 script2.defer = true;
 document.body.appendChild(script2);
+
