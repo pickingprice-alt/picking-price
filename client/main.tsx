@@ -23,3 +23,13 @@ const screens: Record<string, React.ReactNode> = {
 const titles: Record<string, string> = { '/privacy': 'Privacy Policy — Picking Price', '/terms': 'Terms of Service — Picking Price' };
 if (titles[path]) document.title = titles[path];
 if (!product) createRoot(document.getElementById('root')!).render(screens[path] ?? <Workspace/>);
+
+// Load Botpress chatbot
+const script1 = document.createElement('script');
+script1.src = 'https://cdn.botpress.cloud/webchat/v5.0/inject.js';
+document.body.appendChild(script1);
+
+const script2 = document.createElement('script');
+script2.src = 'https://files.bpcontent.cloud/2026/11/23/13/20261123133015-C6I6ABV7.js';
+script2.defer = true;
+document.body.appendChild(script2);
